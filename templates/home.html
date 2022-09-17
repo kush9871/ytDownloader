@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block main %}
+<div class="container">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{download.as_p}}
+    <input type="submit" placeholder="submit" class="btn btn-outline-dark" name="" id="">
+</form>
+</div>
+
+
+{{s}}
+{% endblock main %}
